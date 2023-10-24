@@ -1,0 +1,17 @@
+button {
+    display: inline-block;
+    height: 50px;
+    padding: 0 70px;
+    box-shadow: 0 5px 10px $gris-normal;
+    border-radius: 25px;
+    border: none;
+    font: normal 18px 'Roboto', sans-serif;
+    text-align: center;
+    background: linear-gradient(180deg, $secondary 0%, $primary 100%);
+    color: white;
+    cursor: pointer;
+	&:hover {
+        box-shadow: 0 4px 5px $gris-normal;
+        filter: brightness(1.1);
+	}
+}

@@ -1,0 +1,21 @@
+footer {
+	position: relative; 
+	padding: 30px;
+	background-color: $gris-fonce;
+	color: white;
+	p {
+		margin-bottom: 10px;
+    }
+    > p {
+        font-family: 'Shrikhand', cursive;
+        margin-bottom: 20px;
+    }
+	i {
+		width:26px;
+	}
+	a {
+		&:hover {
+			color: $tertiary;
+		}
+	}
+}
