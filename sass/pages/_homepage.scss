@@ -1,0 +1,142 @@
+/* Location */
+
+.location {
+    margin-top: 100px;
+    height: 60px;
+	background-color: $gris-moyen;
+
+    h3{
+        font-weight: 500;
+    }
+
+	i {
+		margin-right: 5px;
+	}
+}
+
+/* Explore */
+
+.explore {
+	min-height: 300px;
+	text-align: center;
+	background-color: $gris-clair;
+    
+    p{
+        font-size: 18px;
+        opacity: 90%;
+        width: 300px;
+    }
+}
+
+/* Function */
+
+.function {
+	align-items: unset;
+    background-color: white;
+    padding-bottom: 40px;
+    article {
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 0 0 15px;
+        margin: 15px 0;
+        width: 100%;
+        height: 80px;
+        cursor: pointer;
+        h3 {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 5% 0 30px;
+            border-radius: 20px;
+            background-color: $gris-clair;
+            box-shadow: 0 5px 10px $gris-normal;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            i {
+                margin-right: 0.5em;
+                -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+        }
+        p {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 25px;
+            left: 0;
+            width:30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $primary;
+            color: white;
+        }
+        &:hover {
+            h3 {
+                background-color:$primary(0.2);
+            }
+            i {
+                color: $primary; 
+            }
+        }
+    }
+}
+
+/* Restaurants */
+
+.restaurants {
+	background-color: $gris-clair;
+    align-items: unset;
+    }
+
+.card{
+        box-sizing: border-box;
+        min-height: 200px;
+        margin: 20px 0;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 10px $gris-normal;
+        position: relative;
+
+        &__picture img{
+            height: 200px;	
+            object-fit: cover;
+            width: 100%;
+        }
+
+        &__label{
+            margin-top: 10px;
+            margin-right: 10px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: $tertiary;
+            padding: 7px 30px;
+            border-radius: 5px;
+
+            p{
+                font-weight: bold;
+                opacity: 50%;
+            }
+
+        }
+
+        &__text{
+            margin: 15px;
+            position: relative;   
+            width: 400px;     
+        }
+
+        &__like{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 30px;
+                
+        }
+    
+}
+
+
+

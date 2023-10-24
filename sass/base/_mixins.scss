@@ -1,0 +1,4 @@
+@mixin hello ($color : pink){
+    font-size: 40px;
+    color: $color;
+}
