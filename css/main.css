@@ -74,12 +74,40 @@ button {
   font: normal 18px "Roboto", sans-serif;
   text-align: center;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  transition: all 3s ease ease-out;
   color: white;
   cursor: pointer;
 }
 button:hover {
   box-shadow: 0 4px 5px #C0C0C0;
   filter: brightness(1.1);
+}
+
+.card__like {
+  position: relative;
+  margin: 0;
+}
+.card__like i {
+  transition: opacity 3s ease-out;
+}
+
+.heart-fill,
+.heart-empty {
+  font-size: 40px;
+  position: absolute;
+  right: 30px;
+}
+
+.heart-fill {
+  background: linear-gradient(pink, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.heart-fill:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 header {
@@ -102,7 +130,7 @@ header, section {
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
-  padding: 5%;
+  padding: 20px;
 }
 
 footer {
@@ -236,53 +264,20 @@ footer a:hover {
   opacity: 50%;
 }
 .card__text {
-  margin: 15px;
-  position: relative;
-  width: 400px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .card__like {
-  position: absolute;
-  top: 0;
-  right: 0;
   font-size: 30px;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .menu {
   padding: 20px 0 0 0;
-}
-
-img {
-  height: 250px;
-  width: 100%;
-  z-index: -1;
-}
-
-h1 {
-  box-sizing: border-box;
-  position: relative;
-  padding-right: 20px;
-  margin-bottom: 50px;
-  width: 100%;
-}
-h1 span {
-  position: absolute;
-  right: 0;
-}
-
-article {
-  margin-bottom: 10px;
-  width: 100%;
-}
-article > h2 {
-  position: relative;
-  text-transform: uppercase;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  font-weight: normal;
-  border-bottom: #99E2D0 solid;
-}
-
-.menu {
   background: #f6f6f6;
   padding: 10px 20px;
   border-radius: 20px 20px 0 0;
@@ -294,6 +289,8 @@ article > h2 {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   padding: 30px 30px 100px 30px;
+  position: relative;
+  top: -40px;
 }
 .menu__main {
   display: flex;
@@ -322,17 +319,59 @@ article > h2 {
   box-shadow: 5px 5px 10px 2px #C0C0C0;
 }
 .menu__title {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 5px;
 }
 .menu__description {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 .menu__price {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 17px;
 }
 .menu__check {
   display: none;
+}
+
+img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1 {
+  box-sizing: border-box;
+  position: relative;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+h1 span {
+  position: absolute;
+  right: 0;
+}
+
+article {
+  margin-bottom: 10px;
+  width: 100%;
+}
+article > h2 {
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+article > h2:after {
+  content: "";
+  border-bottom: #99E2D0 4px solid;
+  width: 60px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */

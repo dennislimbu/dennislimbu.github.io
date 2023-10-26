@@ -1,0 +1,26 @@
+.card__like {
+  position: relative;
+  margin: 0;
+  i {
+    transition: opacity 3s ease-out;
+  }
+}
+
+.heart-fill,
+.heart-empty {
+  font-size: 40px;
+  position: absolute;
+  right: 30px;
+}
+
+.heart-fill {
+  background: linear-gradient(pink, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.heart-fill:hover {
+  cursor: pointer;
+  opacity: 1;
+}

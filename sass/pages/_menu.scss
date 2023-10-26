@@ -1,98 +1,104 @@
 .menu {
-    padding: 20px 0 0 0;
-    }
-    img{
-        height: 250px;
-        width: 100%;
-        z-index: -1;
-    }
-    h1 {
-        box-sizing: border-box;
-        position:relative;
-        padding-right: 20px;
-        margin-bottom: 50px;           
-        width: 100%;
-        span {
-            position: absolute;
-            right:0;
-        }
-    }
-    article {
-        margin-bottom: 10px;           
-        width: 100%;
-        > h2 {
-            position: relative;
-            text-transform: uppercase;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            font-weight: normal;
-            border-bottom: $tertiary solid;
-        }
-    }
+  padding: 20px 0 0 0;
+  background: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 20px 20px 0 0;
 
-    .menu {
-        background: #f6f6f6;
-       padding: 10px 20px;
-       border-radius: 20px 20px 0 0;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gris-clair;
+    border-radius: 40px 40px 0 0;
+    padding: 30px 30px 100px 30px;
+    position: relative;
+    top: -40px;
+  }
 
-       &__body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $gris-clair;
-        border-radius: 40px 40px 0 0;
-        padding: 30px 30px 100px 30px;
-       }
-     
-       &__main {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin-bottom: 40px;
-         padding-top: 20px;
-       }
-     
-       &__resturant {
-         font-size: 35px;
-         font-weight: bold;
-       } 
-     
-       &__heading {
-         font-size: 25px;
-         color: #000;
-         margin-bottom: 20px;
-       }
-     
-       &__item {
-         background: #fff;
-         border-radius: 15px;
-         padding: 15px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin-bottom: 20px;
-         box-shadow: 5px 5px 10px 2px $gris-normal;
-       }
-     
-       &__title {
-         font-weight: bold;
-         font-size: 20px;
-         margin-bottom: 5px;
-       }
-     
-       &__description {
-         font-size: 16px;
-       }
-     
-       &__price {
-         font-weight: bold;
-         font-size: 17px;
-       }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
 
-       &__check{
-        display: none;
-       }
-     
-     }
+  &__resturant {
+    font-size: 35px;
+    font-weight: bold;
+  }
 
-    
+  &__heading {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px 2px $gris-normal;
+  }
+
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+
+  &__price {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  &__check {
+    display: none;
+  }
+}
+img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+h1 {
+  box-sizing: border-box;
+  position: relative;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+  span {
+    position: absolute;
+    right: 0;
+  }
+}
+article {
+  margin-bottom: 10px;
+  width: 100%;
+  > h2 {
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    &:after {
+      content: "";
+      border-bottom: $tertiary 4px solid;
+      width: 60px;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+    }
+  }
+}
