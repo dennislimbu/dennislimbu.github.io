@@ -116,7 +116,7 @@ button:hover {
 .menu__item,
 .function__card,
 .card {
-  animation: slide-up-fade-in ease 1s;
+  animation: slide-up-fade-in ease 2s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -143,6 +143,61 @@ button:hover {
     transform: translate(0px, 0px);
   }
 }
+/*menu tick*/
+.menu__item {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.menu__item:hover .menu__title,
+.menu__item:hover .menu__description {
+  margin-right: 120px;
+}
+.menu__item:hover .menu__tick-box {
+  right: 0;
+}
+.menu__item:hover .menu__tick {
+  transform: rotate(360deg);
+}
+.menu__item:hover .menu__price {
+  right: 100px;
+}
+.menu__description, .menu__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: margin 1s ease-out;
+  margin-right: 60px;
+}
+.menu__price {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  transition: right 1s ease-out;
+  display: flex;
+  align-items: center;
+}
+.menu__tick-box {
+  background: #99E2D0;
+  position: absolute;
+  right: -80px;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 1s ease-out;
+}
+.menu__tick {
+  color: #fff;
+  transform: rotate(0deg);
+  transition: all 1s ease-out;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -345,9 +400,6 @@ footer a:hover {
   background: #fff;
   border-radius: 15px;
   padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 20px;
   box-shadow: 5px 5px 10px 2px #C0C0C0;
 }
