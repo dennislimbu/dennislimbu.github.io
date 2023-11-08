@@ -50,12 +50,8 @@
       border-radius: 20px;
       background-color: $gris-clair;
       box-shadow: 0 5px 10px $gris-normal;
-      -webkit-transition: all 0.4s;
-      transition: all 0.4s;
       i {
         margin-right: 0.5em;
-        -webkit-transition: all 0.4s;
-        transition: all 0.4s;
       }
     }
     p {
@@ -70,14 +66,6 @@
       border-radius: 50%;
       background-color: $primary;
       color: white;
-    }
-    &:hover {
-      h3 {
-        background-color: $primary(0.2);
-      }
-      i {
-        color: $primary;
-      }
     }
   }
 }

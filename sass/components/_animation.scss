@@ -116,7 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: right 1 s ease-out;
+    transition: right 1s ease-out;
   }
 
   &__tick {
@@ -124,4 +124,37 @@
     transform: rotate(0deg);
     transition: all 1s ease-out;
   }
+}
+
+.function {
+  &__colour {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    i {
+      margin-right: 0.5em;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+    }
+  }
+  &__colour:hover {
+    background-color: rgba(147, 86, 220, 0.25);
+  }
+  i:hover {
+    color: $primary;
+  }
+}
+/* having issues differenataiing the two different hover styles*/
+
+/*loading*/
+
+/* Start with the loader hidden */
+.loader {
+  display: none;
+  margin: auto;
+  border: 20px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 20px solid #ff7a59;
+  width: 200px;
+  height: 200px;
+  animation: scaleAndFade 3s linear;
 }

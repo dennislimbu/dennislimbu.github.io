@@ -1,14 +1,16 @@
-@import 'base/reset';
-@import 'base/variables';
-@import 'base/mixins';
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
 
-@import 'base/default';
+@import "base/default";
 
-@import 'components/button';
-@import 'components/animation';
+@import "components/button";
+@import "components/animation";
 
-@import 'layout/headder';
-@import 'layout/footer';
+@import "layout/mobile";
+@import "layout/desktop";
+@import "layout/headder";
+@import "layout/footer";
 
-@import 'pages/homepage';
-@import 'pages/menu';
+@import "pages/homepage";
+@import "pages/menu";
