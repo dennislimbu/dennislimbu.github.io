@@ -140,6 +140,54 @@ a {
   color: inherit;
 }
 
+.site-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.site-loader {
+  animation: hideAnimation 0s ease 2s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #c0c0c0;
+  opacity: 0.75;
+  color: white;
+  z-index: 5;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+.loader {
+  margin: auto;
+  border: 20px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 20px solid #9356dc;
+  width: 200px;
+  height: 200px;
+  animation: spinner 4s linear infinite;
+  margin-top: 130px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.site-content {
+  position: relative;
+}
+
 button {
   display: inline-block;
   height: 50px;
@@ -170,7 +218,7 @@ button:hover {
 
 .card__like-menu .heart-fill,
 .card__like-menu .heart-empty {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .card__like-menu {
@@ -181,7 +229,6 @@ button:hover {
 
 .heart-fill,
 .heart-empty {
-  font-size: 25px;
   position: absolute;
   right: 40px;
   color: black;
@@ -190,6 +237,7 @@ button:hover {
 .heart-fill {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
@@ -203,21 +251,96 @@ button:hover {
 .menu__item,
 .function__card,
 .card {
-  animation: slide-up-fade-in ease 2s;
+  animation: slide-up-fade-in ease 1s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
 
-.menu__item:nth-of-type(1) {
+.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(1) {
   animation-delay: 0s;
 }
 
-.menu__item:nth-of-type(2) {
-  animation-delay: 2ms;
+.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(2) {
+  animation-delay: 1s;
 }
 
-.menu__item:nth-of-type(3) {
-  animation-delay: 3ms;
+.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(3) {
+  animation-delay: 2s;
+}
+
+.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(4) {
+  animation-delay: 3s;
+}
+
+.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(1) {
+  animation-delay: 3s;
+}
+
+.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(2) {
+  animation-delay: 4s;
+}
+
+.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(3) {
+  animation-delay: 5s;
+}
+
+.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(4) {
+  animation-delay: 6s;
+}
+
+.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(1) {
+  animation-delay: 6s;
+}
+
+.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(2) {
+  animation-delay: 7s;
+}
+
+.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(3) {
+  animation-delay: 8s;
+}
+
+.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(4) {
+  animation-delay: 9s;
+}
+
+.menu__heading:nth-of-type(1) .menu__item:nth-of-type(1) {
+  animation-delay: 1.75s;
+}
+.menu__heading:nth-of-type(1) .menu__item:nth-of-type(2) {
+  animation-delay: 2.75s;
+}
+.menu__heading:nth-of-type(1) .menu__item:nth-of-type(3) {
+  animation-delay: 3.75s;
+}
+.menu__heading:nth-of-type(1) .menu__item:nth-of-type(4) {
+  animation-delay: 4.75s;
+}
+
+.menu__heading:nth-of-type(2) .menu__item:nth-of-type(1) {
+  animation-delay: 4.75s;
+}
+.menu__heading:nth-of-type(2) .menu__item:nth-of-type(2) {
+  animation-delay: 5.75s;
+}
+.menu__heading:nth-of-type(2) .menu__item:nth-of-type(3) {
+  animation-delay: 6.75s;
+}
+.menu__heading:nth-of-type(2) .menu__item:nth-of-type(4) {
+  animation-delay: 7.75s;
+}
+
+.menu__heading:nth-of-type(3) .menu__item:nth-of-type(1) {
+  animation-delay: 9.75s;
+}
+.menu__heading:nth-of-type(3) .menu__item:nth-of-type(2) {
+  animation-delay: 10.75s;
+}
+.menu__heading:nth-of-type(3) .menu__item:nth-of-type(3) {
+  animation-delay: 11.75s;
+}
+.menu__heading:nth-of-type(3) .menu__item:nth-of-type(4) {
+  animation-delay: 12.75s;
 }
 
 @keyframes slide-up-fade-in {
@@ -299,54 +422,13 @@ button:hover {
   color: #9356dc;
 }
 
-/*loading*/
-/* Start with the loader hidden */
-.site-wrapper {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.site-loader {
-  animation: hideAnimation 0s ease 2s;
-  animation-fill-mode: forwards;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #c0c0c0;
-  opacity: 0.75;
-  z-index: 2;
-  color: white;
-}
-
-@keyframes hideAnimation {
-  to {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-  }
-}
-.loader {
-  margin: auto;
-  border: 20px solid #eaf0f6;
-  border-radius: 50%;
-  border-top: 20px solid #9356dc;
-  width: 200px;
-  height: 200px;
-  animation: spinner 4s linear infinite;
-  margin-top: 130px;
-}
-
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.site-content {
-  position: relative;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .back-arrow {
@@ -360,44 +442,26 @@ button:hover {
 }
 
 header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 30px;
-  left: 0;
-  background-color: white;
+  box-shadow: 0 0 10px gray;
+  background-color: #fff;
 }
 header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 289px;
+  height: 30px;
+  width: auto;
   margin: 0 auto;
 }
 
-/* GENERAL */
-header img {
-  height: 30px;
-  width: 175px;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-/* HEADER */
-header i {
-  font-size: 30px;
-}
-
-@media screen and (min-width: 601px) {
-  .testing,
+@media screen and (min-width: 600px) {
+  .content,
   body {
     max-width: 1000px;
     margin: 0 auto;
@@ -409,11 +473,12 @@ header i {
   .back-arrow {
     display: none;
   }
-  /* HEADER */
+  header img {
+    height: 50px;
+  }
   /* MAIN */
   main.home-body,
   section {
-    margin-top: 0;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -452,7 +517,18 @@ header i {
     margin: 15px 20px;
     width: calc(50% - 40px);
   }
-  /* MAIN MENU */
+  .menu__bastille img {
+    height: 350px;
+  }
+  /* Heart*/
+  .heart-fill,
+  .heart-empty {
+    right: 40px;
+  }
+  .card__like-menu .heart-fill,
+  .card__like-menu .heart-empty {
+    font-size: 35px;
+  }
 }
 footer {
   position: relative;
@@ -475,6 +551,11 @@ footer a:hover {
 }
 
 /* Location */
+.content,
+body {
+  margin: 0 auto;
+}
+
 .location {
   height: 60px;
   background-color: #eaeaea;

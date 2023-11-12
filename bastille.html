@@ -17,149 +17,161 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html" title="HomePage">
-          <img
-            class="logo"
-            src="images/logo/ohmyfood.png"
-            alt="ohmyfood-logo"
-          />
-        </a>
-        <a class="back-arrow" href="index.html" title="HomePage">
-          <i class="fa-solid fa-arrow-left"></i
-        ></a>
-      </nav>
-    </header>
-    <main class="menu__bastille">
-      <div>
-        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg""
-        alt="Image of Resturant" />
+  <body class="homepage">
+    <div class="site-wrapper">
+      <div class="site-loader"><div class="loader"></div></div>
+      <div class="site-content">
+        <div class="content">
+          <header>
+            <nav>
+              <a href="index.html" title="HomePage">
+                <img
+                  class="logo"
+                  src="images/logo/ohmyfood.png"
+                  alt="ohmyfood-logo"
+                />
+              </a>
+              <a class="back-arrow" href="index.html" title="HomePage">
+                <i class="fa-solid fa-arrow-left"></i
+              ></a>
+            </nav>
+          </header>
+          <main class="menu__bastille">
+            <div>
+              <img
+              src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg""
+              alt="Image of Resturant" />
+            </div>
+
+            <section class="menu__body">
+              <h1 class="menu__resturant">
+                Bastille
+                <div class="card__like card__like-menu">
+                  <i class="fa-regular fa-heart heart-empty"></i>
+                  <i class="fa-solid fa-heart heart-fill"> </i>
+                </div>
+              </h1>
+
+              <article class="menu__heading">
+                <h2>Entrees</h2>
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">Citrus Squid Carpaccio</div>
+                    <div class="menu__description">With orange zest</div>
+                  </div>
+                  <div class="menu__price">25€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">Grandmother's Vegetable Soup</div>
+                    <div class="menu__description">
+                      Carrots, parsnips, Jerusalem aretichoke
+                    </div>
+                  </div>
+                  <div class="menu__price">35€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu__heading">
+                <h2>Main Dish</h2>
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">Scallops</div>
+                    <div class="menu__description">With mashed parsnip</div>
+                  </div>
+                  <div class="menu__price">40€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">Magret de canard</div>
+                    <div class="menu__description">With mashed potatoes</div>
+                  </div>
+                  <div class="menu__price">35€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">Game Hen</div>
+                    <div class="menu__description">With vegetable gnocchis</div>
+                  </div>
+                  <div class="menu__price">44€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu__heading">
+                <h2>Desserts</h2>
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">loral Ice Cream</div>
+                    <div class="menu__description">With hazelnut butter</div>
+                  </div>
+                  <div class="menu__price">18€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">Chocolate Lava Cake</div>
+                    <div class="menu__description">Revisited</div>
+                  </div>
+                  <div class="menu__price">22€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+
+                <div class="menu__item">
+                  <div class="menu__text">
+                    <div class="menu__title">Napolean</div>
+                    <div class="menu__description">
+                      With blueberries and marzipan
+                    </div>
+                  </div>
+                  <div class="menu__price">23€</div>
+                  <div class="menu__tick-box">
+                    <i class="fa-solid fa-circle-check menu__tick"></i>
+                  </div>
+                </div>
+              </article>
+
+              <button>Order</button>
+            </section>
+          </main>
+
+          <footer>
+            <p>ohmyfood</p>
+            <a href="#"
+              ><p><i class="fa-solid fa-utensils"></i>Suggest a resturant</p></a
+            >
+            <a href="#"
+              ><p>
+                <i class="fa-solid fa-handshake-angle"></i>To become partner
+              </p></a
+            >
+            <a href="#"><p>Legal Notice</p></a>
+            <a href="mailto:dennis.limbu@gmail.com"><p>Contact</p></a>
+          </footer>
+        </div>
       </div>
-
-      <section class="menu__body">
-        <h1 class="menu__resturant">
-          Bastille
-          <div class="card__like card__like-menu">
-            <i class="fa-regular fa-heart heart-empty"></i>
-            <i class="fa-solid fa-heart heart-fill"> </i>
-          </div>
-        </h1>
-
-        <article class="menu__heading">
-          <h2>Entrees</h2>
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">Citrus Squid Carpaccio</div>
-              <div class="menu__description">With orange zest</div>
-            </div>
-            <div class="menu__price">25€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">Grandmother's Vegetable Soup</div>
-              <div class="menu__description">
-                Carrots, parsnips, Jerusalem aretichoke
-              </div>
-            </div>
-            <div class="menu__price">35€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-        </article>
-
-        <article class="menu__heading">
-          <h2>Main Dish</h2>
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">Scallops</div>
-              <div class="menu__description">With mashed parsnip</div>
-            </div>
-            <div class="menu__price">40€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">Magret de canard</div>
-              <div class="menu__description">With mashed potatoes</div>
-            </div>
-            <div class="menu__price">35€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">Game Hen</div>
-              <div class="menu__description">With vegetable gnocchis</div>
-            </div>
-            <div class="menu__price">44€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-        </article>
-
-        <article class="menu__heading">
-          <h2>Desserts</h2>
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">loral Ice Cream</div>
-              <div class="menu__description">With hazelnut butter</div>
-            </div>
-            <div class="menu__price">18€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">Chocolate Lava Cake</div>
-              <div class="menu__description">Revisited</div>
-            </div>
-            <div class="menu__price">22€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-
-          <div class="menu__item">
-            <div class="menu__text">
-              <div class="menu__title">Napolean</div>
-              <div class="menu__description">With blueberries and marzipan</div>
-            </div>
-            <div class="menu__price">23€</div>
-            <div class="menu__tick-box">
-              <i class="fa-solid fa-circle-check menu__tick"></i>
-            </div>
-          </div>
-        </article>
-
-        <button>Order</button>
-      </section>
-    </main>
-
-    <footer>
-      <p>ohmyfood</p>
-      <a href="#"
-        ><p><i class="fa-solid fa-utensils"></i>Suggest a resturant</p></a
-      >
-      <a href="#"
-        ><p><i class="fa-solid fa-handshake-angle"></i>To become partner</p></a
-      >
-      <a href="#"><p>Legal Notice</p></a>
-      <a href="mailto:dennis.limbu@gmail.com"><p>Contact</p></a>
-    </footer>
+    </div>
   </body>
 </html>
