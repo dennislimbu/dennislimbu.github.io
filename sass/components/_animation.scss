@@ -5,6 +5,7 @@
   i {
     transition: opacity 0.5s ease-out;
   }
+  right: 40px;
 }
 
 .card__like-menu .heart-fill,
@@ -21,7 +22,7 @@
 .heart-fill,
 .heart-empty {
   position: absolute;
-  right: 40px;
+  right: 0;
   color: black;
 }
 
@@ -46,6 +47,9 @@
   animation: slide-up-fade-in ease 1s;
   opacity: 0;
   animation-fill-mode: forwards;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 $animation-list: 1 1 0s, 1 2 1s, 1 3 2s, 1 4 3s, 2 1 3s, 2 2 4s, 2 3 5s, 2 4 6s,
