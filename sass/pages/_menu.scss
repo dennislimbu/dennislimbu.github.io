@@ -24,9 +24,10 @@
   }
 
   &__resturant {
-    font-size: 35px;
+    font-size: 26px;
     font-weight: bold;
     position: relative;
+    text-overflow: ellipsis;
   }
 
   &__heading {
