@@ -78,6 +78,9 @@ body {
 .restaurants {
   background-color: $gris-clair;
   align-items: unset;
+  a:hover {
+    scale: 1.05;
+  }
 }
 
 .card {
@@ -113,6 +116,7 @@ body {
   }
 
   &__text {
+    width: auto;
     padding: 15px;
     display: flex;
     justify-content: space-between;

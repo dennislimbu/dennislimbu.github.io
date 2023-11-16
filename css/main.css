@@ -210,7 +210,6 @@ button:hover {
 .card__like {
   position: relative;
   margin: 0;
-  right: 40px;
 }
 .card__like i {
   transition: opacity 0.5s ease-out;
@@ -261,91 +260,48 @@ button:hover {
   transform: scale(1.1);
 }
 
-.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(1) {
+.menu__heading:nth-of-type(1) .menu__item:nth-of-type(1) {
   animation-delay: 0s;
 }
 
-.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(2) {
+.menu__heading:nth-of-type(1) .menu__item:nth-of-type(2) {
   animation-delay: 1s;
 }
 
-.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(3) {
+.menu__heading:nth-of-type(1) .menu__item:nth-of-type(3) {
   animation-delay: 2s;
 }
 
-.menu__heading-each:nth-of-type(1) .menu__item:nth-of-type(4) {
-  animation-delay: 3s;
-}
-
-.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(1) {
-  animation-delay: 3s;
-}
-
-.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(2) {
-  animation-delay: 4s;
-}
-
-.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(3) {
-  animation-delay: 5s;
-}
-
-.menu__heading-each:nth-of-type(2) .menu__item:nth-of-type(4) {
-  animation-delay: 6s;
-}
-
-.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(1) {
-  animation-delay: 6s;
-}
-
-.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(2) {
-  animation-delay: 7s;
-}
-
-.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(3) {
-  animation-delay: 8s;
-}
-
-.menu__heading-each:nth-of-type(3) .menu__item:nth-of-type(4) {
-  animation-delay: 9s;
-}
-
-.menu__heading:nth-of-type(1) .menu__item:nth-of-type(1) {
-  animation-delay: 1.75s;
-}
-.menu__heading:nth-of-type(1) .menu__item:nth-of-type(2) {
-  animation-delay: 2.75s;
-}
-.menu__heading:nth-of-type(1) .menu__item:nth-of-type(3) {
-  animation-delay: 3.75s;
-}
 .menu__heading:nth-of-type(1) .menu__item:nth-of-type(4) {
-  animation-delay: 4.75s;
+  animation-delay: 3s;
 }
 
 .menu__heading:nth-of-type(2) .menu__item:nth-of-type(1) {
-  animation-delay: 4.75s;
+  animation-delay: 4s;
 }
+
 .menu__heading:nth-of-type(2) .menu__item:nth-of-type(2) {
-  animation-delay: 5.75s;
+  animation-delay: 5s;
 }
+
 .menu__heading:nth-of-type(2) .menu__item:nth-of-type(3) {
-  animation-delay: 6.75s;
-}
-.menu__heading:nth-of-type(2) .menu__item:nth-of-type(4) {
-  animation-delay: 7.75s;
+  animation-delay: 6s;
 }
 
 .menu__heading:nth-of-type(3) .menu__item:nth-of-type(1) {
-  animation-delay: 9.75s;
+  animation-delay: 7s;
 }
+
 .menu__heading:nth-of-type(3) .menu__item:nth-of-type(2) {
-  animation-delay: 10.75s;
+  animation-delay: 8s;
 }
+
 .menu__heading:nth-of-type(3) .menu__item:nth-of-type(3) {
-  animation-delay: 11.75s;
+  animation-delay: 9s;
 }
+
 .menu__heading:nth-of-type(3) .menu__item:nth-of-type(4) {
-  animation-delay: 12.75s;
+  animation-delay: 10s;
 }
 
 @keyframes slide-up-fade-in {
@@ -552,6 +508,12 @@ footer a:hover {
   .card__like-menu .heart-empty {
     font-size: 35px;
   }
+  .card__like {
+    left: 20px;
+  }
+  .breakpoint {
+    display: contents;
+  }
 }
 /* Location */
 .content,
@@ -628,6 +590,9 @@ body {
   background-color: #f6f6f6;
   align-items: unset;
 }
+.restaurants a:hover {
+  scale: 1.05;
+}
 
 .card {
   box-sizing: border-box;
@@ -660,6 +625,7 @@ body {
   opacity: 50%;
 }
 .card__text {
+  width: auto;
   padding: 15px;
   display: flex;
   justify-content: space-between;
